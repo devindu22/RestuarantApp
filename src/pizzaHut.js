@@ -21,7 +21,7 @@ const pizzaHut = () => {
     <>
       <ImageBackground
         source={require('../src/assets/image/Pizza-Hut-Logo.jpg')}
-        style={{width: '100%', height: '90%'}}
+        style={{width: '100%', height: '90%', position: 'absolute'}}
       />
       <SafeAreaView style={styles.container1}>
         <Image

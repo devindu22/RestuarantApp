@@ -1,8 +1,12 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-//import FontAwesome from 'react-native-vector-icons/FontAwesome';
-//import { Icon } from 'react-native-elements';
 
 const coursera = () => {
   return (
@@ -14,7 +18,7 @@ const coursera = () => {
         <Text
           style={{
             fontFamily: 'Roboto-Bold',
-            fontSize: 55,
+            fontSize: 53,
             color: 'blue',
             marginTop: -100,
             marginBottom: 20,
@@ -24,7 +28,7 @@ const coursera = () => {
         <Text
           style={{
             fontFamily: 'Roboto-Regular',
-            fontSize: 15,
+            fontSize: 14,
             color: 'grey',
             alignItems: 'center',
             justifyContent: 'center',
@@ -37,7 +41,7 @@ const coursera = () => {
         <Text
           style={{
             fontFamily: 'Roboto-Regular',
-            fontSize: 15,
+            fontSize: 14,
             color: 'grey',
             alignItems: 'center',
             justifyContent: 'center',
@@ -48,13 +52,32 @@ const coursera = () => {
           universities and industry partners
         </Text>
         <TouchableOpacity style={styles.gBtn}>
-          <Ionicons name="logo-google" size={25} color="green" />
+          <Image
+            style={{
+              width: 25,
+              height: 25,
+              alignSelf: 'center',
+              marginTop: 10,
+              marginBottom: 10,
+            }}
+            source={require('./assets/image/google.png')}
+          />
           <Text style={styles.gText}>Continue with Google</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.fBtn}>
           <Ionicons name="logo-facebook" size={25} color="blue" />
           <Text style={styles.fText}>Continue with Facebook</Text>
         </TouchableOpacity>
+        <Image
+          style={{
+            width: 355,
+            height: 0.5,
+            alignSelf: 'center',
+            marginTop: 10,
+            marginBottom: -10,
+          }}
+          source={require('./assets/image/Line.png')}
+        />
         <TouchableOpacity style={styles.LoginBtn}>
           <Text style={styles.LoginText}>Log in with Email</Text>
         </TouchableOpacity>
@@ -68,19 +91,7 @@ const coursera = () => {
           <TouchableOpacity style={styles.termsBtn}>
             <Text style={styles.signUpText}>Terms of Services </Text>
           </TouchableOpacity>
-          <Text
-            style={{
-              fontFamily: 'Roboto-Regular',
-              fontSize: 15,
-              color: 'grey',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: 50,
-              display: 'flex',
-              flexDirection: 'column',
-            }}>
-            and
-          </Text>
+          <Text>and</Text>
           <TouchableOpacity style={styles.termsBtn}>
             <Text style={styles.signUpText}> Privacy policy</Text>
           </TouchableOpacity>
@@ -104,6 +115,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     color: 'blue',
+    borderWidth: '50%',
     backgroundColor: '#fff',
     marginTop: -10,
     marginBottom: 10,
@@ -115,7 +127,7 @@ const styles = StyleSheet.create({
     height: 47,
     backgroundColor: '#fff',
     borderRadius: 4,
-    borderColor: 'black',
+    borderColor: 'grey',
     borderWidth: 1,
     borderRadius: 4,
     alignItems: 'center',
@@ -130,7 +142,7 @@ const styles = StyleSheet.create({
     height: 47,
     backgroundColor: '#fff',
     borderRadius: 4,
-    borderColor: 'black',
+    borderColor: 'blue',
     borderWidth: 1,
     borderRadius: 4,
     alignItems: 'center',
@@ -139,7 +151,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   gText: {
-    color: 'black',
+    color: 'grey',
     fontSize: 16,
     fontWeight: '500',
     fontFamily: 'Roboto-Bold',
@@ -159,8 +171,8 @@ const styles = StyleSheet.create({
   },
   btnText: {
     color: 'blue',
-    fontSize: 17,
-    fontFamily: 'Roboto-Regular',
+    fontSize: 15,
+    fontFamily: 'Roboto-Bold',
     marginTop: 30,
     marginBottom: 10,
     marginStart: 15,
@@ -168,7 +180,7 @@ const styles = StyleSheet.create({
   LoginBtn: {
     display: 'flex',
     flexDirection: 'row',
-    width: '90%',
+    width: '91%',
     borderRadius: 4,
     backgroundColor: 'blue',
     height: 50,
@@ -207,7 +219,7 @@ const styles = StyleSheet.create({
   signUpText: {
     color: 'blue',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     fontSize: 15,
     marginTop: 1,
   },
