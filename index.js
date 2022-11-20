@@ -4,6 +4,6 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import foodhub from './src/foodhub';
+import App from './src/welcome';
 
-AppRegistry.registerComponent(appName, () => foodhub);
+AppRegistry.registerComponent(appName, () => App);
