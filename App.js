@@ -1,8 +1,17 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow strict-local
+ */
 
-export default function App() {
-  return (
-    <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
-  );
-}
+ import React from 'react';
+ import MainNavigation from './src/navigation/MainNavigation';
+ 
+ const App = () => {
+   return <MainNavigation />;
+ };
+ 
+ export default App;
+ 

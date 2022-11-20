@@ -50,13 +50,6 @@ public class MainApplication extends Application implements ReactApplication {
     }
   }
   
-@Override
-protected List<ReactPackage> getPackages() {
-  return Arrays.<ReactPackage>asList(
-    new MainReactPackage(),
-    new LinearGradientPackage() // <---- and This!
-  );
-}
 
   @Override
   public void onCreate() {
@@ -66,6 +59,7 @@ protected List<ReactPackage> getPackages() {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
+
 
   /**
    * Loads Flipper in React Native templates. Call this in the onCreate method with something like
