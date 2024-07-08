@@ -9,4 +9,3 @@
 <img src="https://github.com/devindu22/RestuarantApp/assets/114844896/d47849a2-1bf1-4698-95ed-1ea5f86a7ecb" width=35% height=35%>
 
 <img src="https://github.com/devindu22/RestuarantApp/assets/114844896/4be39a44-a95c-4ec4-ba20-578fa2fdc2ef" width=35% height=35%>
-![226867890-12bec657-a532-4baf-ab3c-07917c123725](https://github.com/devindu22/RestuarantApp/assets/114844896/4be39a44-a95c-4ec4-ba20-578fa2fdc2ef)
